@@ -193,7 +193,8 @@ Our custom observability layer tracks specialized token metrics to help manage a
 - **Reasoning Tokens**: For models like GPT-4o, we track the internal reasoning tokens, giving you insight into the model's logic before it generates the final response.
 - **Complete Token Mapping**: Monitor `prompt_tokens`, `completion_tokens`, and `total_tokens` for every execution.
 
-![Token Attribution Detail](docs/images/langfuse_token_details.png)
+![Token Attribution Detail]<img width="997" height="627" alt="Screenshot from 2026-04-07 00-13-36" src="https://github.com/user-attachments/assets/6ec8ef47-4eda-40b4-b80f-daa2916db6af" />
+
 *Detailed trace featuring reasoning and cached token attribution for cost-optimized operations.*
 
 ### 📊 Deep Trace Analysis
@@ -202,13 +203,15 @@ Traces exported to Langfuse allow for deep analysis of the multi-agent orchestra
 - **LLM-to-Tool Flow**: Visualize exactly how the agent reasons, calls a tool (e.g., `execute_sql` or `getAccountCount`), and then processes the result to formulate a final answer.
 - **Input/Output Transparency**: See the full serialized message history (System, User, Assistant, Tool) for every turn.
 
-![Langfuse Trace List](docs/images/langfuse_traces_list.png)
+![Langfuse Trace List]<img width="1927" height="966" alt="Screenshot from 2026-04-07 00-12-54" src="https://github.com/user-attachments/assets/effb7674-2cca-45eb-bbc5-edabd6e3a6e2" />
+
 *Cumulative trace dashboard showing model latency and overall token usage.*
 
-![Langfuse Trace Workflow](docs/images/langfuse_trace_workflow.png)
+![Langfuse Trace Workflow]<img width="1003" height="1191" alt="Screenshot from 2026-04-07 00-14-09" src="https://github.com/user-attachments/assets/18ccccca-87ba-4b20-9080-f85824dd9982" />
+
 *A sample trace showing the internal transition from a user query to a tool call.*
 
-![Banking Tool Call Trace](docs/images/langfuse_banking_tool_trace.png)
+![Banking Tool Call Trace]<img width="1513" height="1236" alt="Screenshot from 2026-03-26 21-32-41" src="https://github.com/user-attachments/assets/c218bd91-7589-4d69-936f-888e05657d49" />
 *A specialized trace showing the agent's logic for a banking-specific tool call.*
 
 ---
